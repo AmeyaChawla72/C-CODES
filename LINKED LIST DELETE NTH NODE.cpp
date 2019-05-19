@@ -46,7 +46,7 @@ k=temp->next;
 temp->next=n;
 n->next=k;
 }
-void deletenthelemnt(node*head,int n){
+void deletenthelemnt(node*&head,int n){
     node*temp=head;
     int c=1;
     while(c!=n-1){
