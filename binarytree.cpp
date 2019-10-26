@@ -7,19 +7,24 @@ class node{
     node*right;
     node(int d){
         data=d;
-        left=right=NULL;
+        left=NULL;
+        right=NULL;
     }
 };
 node* buildtree(){
     int d;
     cin>>d;
-    if(d==-1){
-        return NULL;
-    }
+    if(d!=-1){
+       
+    
     node*root=new node(d);
     root->left=buildtree();
     root->right=buildtree();
     return root;
+            int d;
+    cin>>d;
+    }
+    else{return NULL;}
 }
 void print(node*root){
     if(root==NULL){
